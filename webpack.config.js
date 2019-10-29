@@ -1,20 +1,21 @@
 const HtmlPlugin = require('html-webpack-plugin');
-  const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
   
-  module.exports = {
-    entry: './src/index.js',
-    output: {
-      filename: './bundle[hash].js'
-    },
-    devServer: {
-      port: 7890
-    },
-    plugins: [
-      new HtmlPlugin({ template: './src/index.html' }),
-      new CleanWebpackPlugin()
-    ],
-    module: {
-      rules: 
+// eslint-disable-next-line no-undef
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: './bundle[hash].js'
+  },
+  devServer: {
+    port: 7890
+  },
+  plugins: [
+    new HtmlPlugin({ template: './src/index.html' }),
+    new CleanWebpackPlugin()
+  ],
+  module: {
+    rules: 
       [
         {
           test: /.js$/,
@@ -61,6 +62,5 @@ const HtmlPlugin = require('html-webpack-plugin');
           },
         }
       ]
-    }
-  };
-  
+  }
+};
