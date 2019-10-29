@@ -15,7 +15,7 @@ export default function Character({ image, name, species }) {
   );
 }
 
-Character.PropTypes = {
+Character.propTypes = {
   image: PropTypes.string,
   name: PropTypes.string.isRequired,
   species: PropTypes.string
