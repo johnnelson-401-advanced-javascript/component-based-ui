@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List.js Renders a List of Characters 1`] = `
+<ul
+  className="listDisplay"
+>
+  <li
+    key="Noob-Noob"
+  >
+    <Character
+      image="https://rickandmortyapi.com/api/character/avatar/252.jpeg"
+      name="Noob-Noob"
+      species="Poopybutthole"
+    />
+  </li>
+  <li
+    key="Noob-Noob"
+  >
+    <Character
+      image="https://rickandmortyapi.com/api/character/avatar/252.jpeg"
+      name="Noob-Noob"
+      species="Poopybutthole"
+    />
+  </li>
+</ul>
+`;
