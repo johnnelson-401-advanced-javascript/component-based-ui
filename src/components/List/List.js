@@ -15,7 +15,7 @@ export default function ListItems({ characters })  {
   )
   );
   return (
-    <ul className="listDisplay" >
+    <ul className={styles.listDisplay} >
       {listItems}
     </ul>
   );
