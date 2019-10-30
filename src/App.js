@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
-import ListItems from '../src/components/List';
+import ListItems from './components/List/List';
 import characters from '../src/data';
 
 const App = () => (

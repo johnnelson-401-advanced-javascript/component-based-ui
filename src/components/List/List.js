@@ -1,6 +1,7 @@
 import React from 'react';
-import Character from './Character';
+import Character from '../Characters/Character';
 import PropTypes from 'prop-types';
+import styles from './List.css';
 
 export default function ListItems({ characters })  {
   const listItems = characters.map((character) => (
@@ -14,7 +15,7 @@ export default function ListItems({ characters })  {
   )
   );
   return (
-    <ul>
+    <ul className="listDisplay" >
       {listItems}
     </ul>
   );
