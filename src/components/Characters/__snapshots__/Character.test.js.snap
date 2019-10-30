@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character.js renders a Character 1`] = `
+<dl
+  className="characterDisplay"
+>
+  <img
+    src="https://rickandmortyapi.com/api/character/avatar/252.jpeg"
+  />
+  <dt>
+    Name
+  </dt>
+  <dd>
+    Noob-Noob
+  </dd>
+  <dt>
+    Species
+  </dt>
+  <dd>
+    Poopybutthole
+  </dd>
+</dl>
+`;
