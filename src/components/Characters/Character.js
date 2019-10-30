@@ -1,23 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './characters.css';
 
-export default function Character({ image, name, species }) {
-  return (
-    <dl className={styles.characterDisplay}>
-      <img src={image}></img>
+export default class Character extends Component {
+  static propTypes = {
+    image: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    species: PropTypes.string
+  };
 
-      <dt>Name</dt>
-      <dd>{name}</dd>
-
-      <dt>Species</dt>
-      <dd>{species}</dd>
-    </dl>
-  );
+  render() {
+    const { image, name, species } = this.props;
+    return (
+      <dl className={styles.characterDisplay}>
+        <img src={image}></img>
+  
+        <dt>Name</dt>
+        <dd>{name}</dd>
+  
+        <dt>Species</dt>
+        <dd>{species}</dd>
+      </dl>
+    );
+  }
 }
-
-Character.propTypes = {
-  image: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  species: PropTypes.string
-};
