@@ -5,6 +5,9 @@ import ListItems from './components/List/List';
 import characters from './assets/data';
 
 export default class App extends Component {
+  state = {
+
+  };
   
   render() {
     return (
